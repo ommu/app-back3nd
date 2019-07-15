@@ -1,0 +1,37 @@
+{
+	"name": "sudaryanto/back3nd",
+	"description": "back3nd",
+	"type": "ommu-apps",
+	"keywords": [
+		"apps",
+		"blog",
+		"company-profile",
+		"ommu",
+		"ommu-platform",
+		"yii2"
+	],
+	"license": "Apache-2.0",
+	"homepage": "https://bitbucket.org/ommu/back3nd",
+	"support": {
+		"issues": "https://bitbucket.org/ommu/back3nd/issues",
+		"wiki": "https://bitbucket.org/ommu/back3nd/wiki",
+		"source": "https://bitbucket.org/ommu/back3nd"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://bitbucket.org/ommu/back3nd.git"
+	},
+	"authors": [
+		{
+			"name": "Putra Sudaryanto",
+			"email": "putra@sudaryanto.id",
+			"homepage": "https://sudaryanto.id",
+			"role": "Creator"
+		}
+	],
+	"require": {
+		"php": "~7.0",
+		"yiisoft/yii2": "~2.0.13",
+		"ommu/gentelella": "dev-master"
+	}
+}
