@@ -11,7 +11,7 @@ $bn = \app\components\Application::getAppId();
 
 $config = [
 	'id' => 'back3nd',
-	'name' => 'OMMU by sudaryanto.id',
+	'name' => 'OMMU',
 	'runtimePath' => dirname(__DIR__) . '/runtime',
 	'bootstrap' => [
 		'app\components\bootstrap\ModuleAutoLoader'
