@@ -1,11 +1,12 @@
 {
-	"name": "sudaryanto/back3nd",
-	"description": "back3nd",
+	"name": "ommu/back3nd",
+	"description": "Backoffice web apps from OMMU",
 	"type": "ommu-apps",
 	"keywords": [
 		"apps",
-		"blog",
-		"company-profile",
+		"backoffice",
+		"web-apps",
+		"backoffice-web-apps",
 		"ommu",
 		"ommu-platform",
 		"yii2"
