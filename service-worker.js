@@ -1,13 +1,10 @@
 'use strict';
 
 const version = new URL(location).searchParams.get('v');
-console.log(version);
 
 var cacheVersion = 'v1';
-console.log(cacheVersion);
-if(version)
+if (version)
 	cacheVersion = version;
-console.log(version);
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js'),
 
