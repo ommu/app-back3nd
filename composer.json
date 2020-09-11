@@ -35,11 +35,22 @@
 		"yiisoft/yii2": "~2.0.13",
 		"ommu/gentelella": "dev-master"
 	},
+	"scripts": {
+		"post-create-project-cmd": [
+			"yii\\composer\\Installer::postCreateProject",
+			"yii\\composer\\Installer::postInstall"
+		],
+		"post-install-cmd": [
+			"yii\\composer\\Installer::postInstall"
+		]
+	},
 	"extra": {
 		"yii\\composer\\Installer::postCreateProject": {
 			"generateCookieValidationKey": [
 				"back3nd/app/config/main.php"
-			],
+			]
+		},
+		"yii\\composer\\Installer::postInstall": {
 			"setPermission": [
 				{
 					"back3nd/assets": "0777",
