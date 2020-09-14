@@ -1,5 +1,5 @@
 {
-	"name": "ommu/back3nd",
+	"name": "ommuid/back3nd",
 	"description": "Backoffice web apps from OMMU",
 	"type": "ommu-apps",
 	"keywords": [
@@ -12,15 +12,15 @@
 		"yii2"
 	],
 	"license": "Apache-2.0",
-	"homepage": "https://bitbucket.org/ommu/back3nd",
+	"homepage": "https://bitbucket.org/ommu/app-back3nd",
 	"support": {
-		"issues": "https://bitbucket.org/ommu/back3nd/issues",
-		"wiki": "https://bitbucket.org/ommu/back3nd/wiki",
-		"source": "https://bitbucket.org/ommu/back3nd"
+		"issues": "https://bitbucket.org/ommu/app-back3nd/issues",
+		"wiki": "https://bitbucket.org/ommu/app-back3nd/wiki",
+		"source": "https://bitbucket.org/ommu/app-back3nd"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org/ommu/back3nd.git"
+		"url": "https://bitbucket.org/ommu/app-back3nd.git"
 	},
 	"authors": [
 		{
