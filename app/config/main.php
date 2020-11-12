@@ -17,13 +17,6 @@ $config = [
 		'app\components\bootstrap\ModuleAutoLoader'
 	],
 	'components' => [
-		'request' => [
-			// !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-			'cookieValidationKey' => ''
-		],
-		'errorHandler' => [
-			'errorAction' => 'site/error',
-		],
 		'session' => [
 			'class' => 'yii\web\Session',
 			'name' => $bn,
@@ -34,8 +27,8 @@ $config = [
 		'jwt' => [
 			'class'    => 'app\components\Jwt',
 			'key'      => '7HgMBs0OzqYqXrQTz01GSRqFnj18Swta',
-			'issuer'   => 'http://dpad.jogjaprov.go.id/back3nd',
-			'audiance' => 'http://dpad.jogjaprov.go.id/back3nd',
+			'issuer'   => 'http://back3nd.ommu.co',
+			'audiance' => 'http://back3nd.ommu.co',
 			'id'       => 'bdbe0c4a-008d-4a71-a7d9-89f17d908ee5',
 		],
 		'moduleManager' => [

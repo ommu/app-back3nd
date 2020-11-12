@@ -37,7 +37,6 @@
 	},
 	"scripts": {
 		"post-create-project-cmd": [
-			"yii\\composer\\Installer::postCreateProject",
 			"yii\\composer\\Installer::postInstall"
 		],
 		"post-install-cmd": [
@@ -45,11 +44,6 @@
 		]
 	},
 	"extra": {
-		"yii\\composer\\Installer::postCreateProject": {
-			"generateCookieValidationKey": [
-				"back3nd/app/config/main.php"
-			]
-		},
 		"yii\\composer\\Installer::postInstall": {
 			"setPermission": [
 				{
