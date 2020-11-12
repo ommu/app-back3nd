@@ -49,7 +49,8 @@
 				{
 					"back3nd/assets": "0777",
 					"back3nd/cache": "0777",
-					"back3nd/app/runtime": "0777"
+					"back3nd/app/runtime": "0777",
+					"back3nd/apps.json": "0777"
 				}
 			]
 		}
