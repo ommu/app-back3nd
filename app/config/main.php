@@ -27,8 +27,8 @@ $config = [
 		'jwt' => [
 			'class'    => 'app\components\Jwt',
 			'key'      => '7HgMBs0OzqYqXrQTz01GSRqFnj18Swta',
-			'issuer'   => 'http://back3nd.ommu.co',
-			'audiance' => 'http://back3nd.ommu.co',
+			'issuer'   => 'http://back3nd.ommu.id',
+			'audiance' => 'http://back3nd.ommu.id',
 			'id'       => 'bdbe0c4a-008d-4a71-a7d9-89f17d908ee5',
 		],
 		'moduleManager' => [
