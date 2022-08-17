@@ -16,14 +16,14 @@ require(__DIR__ . '/../protected/config/bootstrap.php');
 require(__DIR__ . '/app/config/bootstrap.php');
 
 $config = \yii\helpers\ArrayHelper::merge(
-	require(__DIR__ . '/../protected/config/main.php'),
-	require(__DIR__ . '/app/config/main.php'),
-	(is_readable(__DIR__ . '/../protected/config/dynamic.php'))?
-		require(__DIR__ . '/../protected/config/dynamic.php'):
-		[],
-	(is_readable(__DIR__ . '/app/config/dynamic.php'))?
-		require(__DIR__ . '/app/config/dynamic.php'):
-		[]
+    require(__DIR__ . '/../protected/config/main.php'),
+    require(__DIR__ . '/app/config/main.php'),
+    (is_readable(__DIR__ . '/../protected/config/dynamic.php'))?
+        require(__DIR__ . '/../protected/config/dynamic.php'):
+        [],
+    (is_readable(__DIR__ . '/app/config/dynamic.php'))?
+        require(__DIR__ . '/app/config/dynamic.php'):
+        []
 );
 
 if(\app\components\Application::isDev()) {
@@ -34,32 +34,39 @@ if(\app\components\Application::isDev()) {
 			require(__DIR__ . '/app/config/main.php'),
 		(is_readable(__DIR__ . '/../protected/config/dynamic-dev.php'))? 
 			require(__DIR__ . '/../protected/config/dynamic-dev.php'): 
-			require(__DIR__ . '/../protected/config/dynamic.php'),
+			((is_readable(__DIR__ . '/../protected/config/dynamic.php'))?
+                require(__DIR__ . '/../protected/config/dynamic.php'):
+                []),
 		(is_readable(__DIR__ . '/app/config/dynamic-dev.php'))? 
 			require(__DIR__ . '/app/config/dynamic-dev.php'): 
-			require(__DIR__ . '/app/config/dynamic.php')
+			((is_readable(__DIR__ . '/app/config/dynamic.php'))?
+                require(__DIR__ . '/app/config/dynamic.php'):
+                [])
 	);
 
 	// generate assets directory
 	$assets = dirname(__FILE__).'/assets';
-	if(!file_exists($assets))
+	if(!file_exists($assets)) {
 		@mkdir($assets, 0777, true);
-	else
+    } else {
 		@chmod($assets, 0777, true);
+    }
 	
 	// generate cache directory
 	$cache = dirname(__FILE__).'/cache';
-	if(!file_exists($cache))
+	if(!file_exists($cache)) {
 		@mkdir($cache, 0777, true);
-	else
+    } else {
 		@chmod($cache, 0777, true);
+    }
 	
 	// generate runtime directory in protected
 	$runtime = dirname(__FILE__).'/app/runtime';
-	if(!file_exists($runtime))
+	if(!file_exists($runtime)) {
 		@mkdir($runtime, 0777, true);
-	else
+    } else {
 		@chmod($runtime, 0777, true);
+    }
 }
 
 $app = new \app\components\Application($config);
