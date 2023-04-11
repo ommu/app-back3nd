@@ -49,7 +49,7 @@ if(\app\components\Application::isDev()) {
 	if(!file_exists($assets)) {
 		@mkdir($assets, 0777, true);
     } else {
-		@chmod($assets, 0777, true);
+		@chmod($assets, 0777);
     }
 	
 	// generate cache directory
@@ -57,7 +57,7 @@ if(\app\components\Application::isDev()) {
 	if(!file_exists($cache)) {
 		@mkdir($cache, 0777, true);
     } else {
-		@chmod($cache, 0777, true);
+		@chmod($cache, 0777);
     }
 	
 	// generate runtime directory in protected
@@ -65,7 +65,7 @@ if(\app\components\Application::isDev()) {
 	if(!file_exists($runtime)) {
 		@mkdir($runtime, 0777, true);
     } else {
-		@chmod($runtime, 0777, true);
+		@chmod($runtime, 0777);
     }
 }
 
