@@ -1,5 +1,5 @@
 {
-	"name": "ommuid/back3nd",
+	"name": "ommu/back3nd",
 	"description": "Backoffice Web Apps From OMMU",
 	"type": "ommu-apps",
 	"keywords": [
@@ -7,26 +7,25 @@
 		"web-apps",
 		"backoffice",
 		"backoffice-web-apps",
-		"ommu",
-		"ommu-platform",
+		"ommu2",
 		"yii2"
 	],
 	"license": "Apache-2.0",
-	"homepage": "https://bitbucket.org/ommu/app-back3nd",
+	"homepage": "https://github.com/ommu/app-back3nd",
 	"support": {
-		"issues": "https://bitbucket.org/ommu/app-back3nd/issues",
-		"wiki": "https://bitbucket.org/ommu/app-back3nd/wiki",
-		"source": "https://bitbucket.org/ommu/app-back3nd"
+		"issues": "https://github.com/ommu/app-back3nd/issues",
+		"wiki": "https://github.com/ommu/app-back3nd/wiki",
+		"source": "https://github.com/ommu/app-back3nd"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://bitbucket.org/ommu/app-back3nd.git"
+		"url": "https://github.com/ommu/app-back3nd.git"
 	},
 	"authors": [
 		{
 			"name": "Putra Sudaryanto",
-			"email": "putra@ommu.co",
-			"homepage": "https://ommu.co",
+			"email": "putra@ommu.id",
+			"homepage": "https://ommu.id",
 			"role": "Creator"
 		}
 	],
