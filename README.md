@@ -1,8 +1,3 @@
-app-back3nd
-=============
-Backoffice Web Apps For OMMU2
-
-
 Installation
 ------------
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -10,7 +5,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist ommu/back3nd "dev-master"
+php composer.phar require --prefer-dist ommu/back3nd "dev-master"
 ```
 
  or
